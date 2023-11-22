@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:migrate:prod": "cross-env NODE_ENV=production npx sequelize db:migrate"
+    "db:migrate:prod": "cross-env NODE_ENV=production npx sequelize db:migrate",
+    "seed:admin": "node seeders/20231119162042-admin-seeder.js"
   },
   "keywords": [],
   "author": "",
