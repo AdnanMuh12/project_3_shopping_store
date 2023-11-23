@@ -14,7 +14,14 @@ module.exports = {
       },
       email: {
         type: Sequelize.STRING,
+        allowNull: false,
         unique: true,
+        validate: {
+          isEmail: {
+            args: true,
+            msg: 'Format email tidak valid'
+          }
+        }
       },
       password: {
         type: Sequelize.STRING
