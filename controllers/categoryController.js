@@ -106,10 +106,7 @@ class CategoryController {
             })
 
         } catch (error) {
-            res.status(500).json({
-                status: 500,
-                error: "Internal server eror"
-            });
+            res.status(500).json({message: error.message})
         }
     }
 
